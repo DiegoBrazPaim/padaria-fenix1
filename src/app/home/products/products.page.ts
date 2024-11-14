@@ -31,32 +31,32 @@ export class ProductsPage implements OnInit {
     {
       nome: "Broa",
       imagem: "assets/icon/broa.jpg",
-      preco: "0,50"
+      preco: "2,00"
     },
     {
       nome: "Pão Suíço",
       imagem: "assets/icon/paosuico.jpeg",
-      preco: 25.00
+      preco: "0,60"
     },
     {
       nome: "Pão de Calabresa",
       imagem: "assets/icon/calabresa.jpeg",
-      preco: 25.00
+      preco: "1,50"
     },
     {
       nome: "Pão de Coco",
       imagem: "assets/icon/paodecoco.jpg",
-      preco: 25.00
+      preco: "1,50"
     },
     {
       nome: "Pão de Cachorro quente",
       imagem: "assets/icon/paodecachorroquente.jpeg",
-      preco: 25.00
+      preco: "1,50"
     },
     {
       nome: "Pão de Batata",
       imagem: "assets/icon/paodebatata.jpeg",
-      preco: 25.00
+      preco: "2,00"
     },
   ];
 
@@ -64,22 +64,22 @@ export class ProductsPage implements OnInit {
     { 
       nome: "Coca Cola", 
       imagem: 'assets/icon/coca.jpeg',
-      preco: 25.00
+      preco: "8,00"
      },
     { 
       nome: "Pepsi",
       imagem: "assets/icon/pepsi.jpeg",
-      preco: 25.00
+      preco: "7,50"
      },
     { 
       nome: "Sprite",
       imagem: "assets/icon/sprite.jpeg",
-      preco: 25.00 
+      preco: "7,50"
       },
       { 
         nome: "Café",
         imagem: "assets/icon/cafe.jpeg",
-        preco: 25.00 
+        preco: "4,50"
         },
   ];
 
@@ -87,36 +87,36 @@ export class ProductsPage implements OnInit {
     { 
       nome: "Bolo de Chocolate", 
       imagem: "assets/icon/chocolate.jpeg",
-       preco: 25.00
+       preco: "4,00 Fatia"
     },
     {
        nome: "Bolo de Cenoura", 
        imagem: "assets/icon/cenoura.jpeg",
-       preco: 25.00
+       preco: "4,00 Fatia"
        },
     {
        nome: "Bolo de Fubá",
        imagem: "assets/icon/fuba.jpeg",
-       preco: 25.00
+       preco: "4,00 Fatia"
        },
     {
        nome: "Bolo de Milho",
        imagem: "assets/icon/milho.jpeg",
-       preco: 25.00
+       preco: "4,00 Fatia"
        },
     
   ];
 
   biscoitos = [
     {
-       nome: "Biscoito de Maizena",
+       nome: "Biscoito de Maisena",
        imagem: "assets/icon/maizena.jpeg",
-       preco: 25.00
+       preco: "5,00"
       },
     {
        nome: "Biscoito de Chocolate",
        imagem:  "assets/icon/cookie.jpeg",
-       preco: 25.00 
+       preco: "5,00"
       },
     // Adicione mais biscoitos conforme necessário
   ];
@@ -125,43 +125,53 @@ export class ProductsPage implements OnInit {
     {
        nome: "Presunto",
        imagem: "assets/icon/presunto.jpeg",
-       preco: 25.00
+       preco: "5,00 100g"
       },
     { 
       nome: "Mortadela",
       imagem: "assets/icon/mortadela.jpeg",
-      preco: 25.00 
+      preco: "4,00 100g"
     },
     {
       nome: "Queijo Minas",
       imagem: "assets/icon/minas.jpeg",
-      preco: 25.00 
+      preco: "7,00 100g" 
      },
    { 
      nome: "Queijo Prato",
      imagem: "assets/icon/prato.jpeg",
-     preco: 25.00 
+     preco: "7,00 100g"
    },
    {
     nome: "Queijo Mussarela",
     imagem: "assets/icon/mussarela.jpeg",
-    preco: 25.00 
+    preco: "7,00 100g"
    },
     // Adicione mais frios conforme necessário
   ];
 
   outros = [
     {
-       nome: "",
-       imagem: "",
-       preco: 25.00
+       nome: "Croassaint",
+       imagem: "assets/icon/croassaint.jpeg",
+       preco: "6,50"
     },
     { 
       nome: "Pastel",
-      imagem: "",
-      preco: 25.00
+      imagem: "assets/icon/pastel.jpeg",
+      preco: "8,00"
     },
-    // Adicione mais itens conforme necessário
+    { 
+      nome: "Wrap",
+      imagem: "assets/icon/wrap.jpeg",
+      preco: "8,00"
+    },
+    { 
+      nome: "Tapioca",
+      imagem: "assets/icon/tapioca.jpeg",
+      preco: "7,50"
+    },
+    
   ];
 
 
