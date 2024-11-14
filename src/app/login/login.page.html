@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="transparent">
+    <ion-title class="title-with-logo">
+      <a [routerLink]="['/products']">
+        <img src="assets/icon/logo.jpeg" alt="Padaria Fênix" class="logo" style="margin-right: 10px;">
+      </a>
+      Padaria Fênix
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="background">
+  <div class="container">
+    <h2>Login</h2>
+
+    <ion-item>
+      <ion-icon name="mail" slot="start"></ion-icon>
+      <ion-input placeholder="Digite seu email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-input type="password" placeholder="Digite sua senha"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="warning">Entrar</ion-button>
+
+    <p style="text-align: left;">
+      Não possui um login? 
+      <span style="margin-right: 10px;">
+        <a href="/cadastro">Cadastre-se</a>
+      </span> 
+      | 
+      <span style="margin-left: 10px;">
+        <a href="/alterar-senha">Esqueceu a senha?</a>
+      </span>
+    </p>
+  </div>
+</ion-content>

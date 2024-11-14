@@ -1,0 +1,139 @@
+{
+  "receitas": [
+    {
+      "produto": "Pão Francês",
+      "ingredientes": [
+        "500g de farinha de trigo",
+        "10g de fermento biológico seco (ou 30g de fermento fresco)",
+        "10g de sal",
+        "10g de açúcar",
+        "300ml de água gelada",
+        "10g de manteiga"
+      ],
+      "modoDePreparo": "Em uma tigela, misture a farinha e o fermento. Adicione o sal, o açúcar e a manteiga. Aos poucos, vá adicionando a água gelada, misturando até formar uma massa. Sove a massa por cerca de 10 minutos até ficar lisa. Deixe descansar por 1 hora até dobrar de volume. Divida a massa, modele os pães e deixe descansar por 30 minutos. Asse em forno preaquecido a 250°C por cerca de 20 minutos ou até dourar.",
+      "imagem": "assets/icon/pao-frances.jpeg"
+    },
+    {
+      "produto": "Broa",
+      "ingredientes": [
+        "500g de farinha de trigo",
+        "250g de fubá (farinha de milho)",
+        "1 colher de sopa de fermento biológico seco",
+        "1/2 xícara de açúcar",
+        "1 colher de chá de sal",
+        "1 xícara de leite morno",
+        "1/4 xícara de óleo",
+        "1 ovo"
+      ],
+      "modoDePreparo": "Misture o fermento, o açúcar e o leite morno, deixando descansar por 10 minutos. Em outra tigela, misture a farinha, o fubá e o sal. Adicione o óleo e o ovo, misturando bem. Acrescente a mistura de fermento e sove a massa. Deixe descansar até dobrar de volume. Modele as broas e coloque-as em uma assadeira. Asse em forno preaquecido a 180°C por 30 a 40 minutos.",
+      "imagem": "assets/icon/broa.jpg"
+    },
+    {
+      "produto": "Pão Suíço",
+      "ingredientes": [
+        "500g de farinha de trigo",
+        "10g de fermento biológico seco",
+        "2 colheres de sopa de açúcar",
+        "1 colher de chá de sal",
+        "2 colheres de sopa de manteiga",
+        "1 xícara de leite morno",
+        "1 ovo para pincelar"
+      ],
+      "modoDePreparo": "Dissolva o fermento no leite morno com o açúcar. Misture a farinha, o sal e a manteiga. Adicione o leite com fermento e misture até formar uma massa. Sove bem e deixe descansar até dobrar de volume. Modele os pães e deixe descansar por 30 minutos. Pincele com ovo e asse a 180°C até dourar.",
+      "imagem": "assets/icon/paosuico.jpeg"
+    },
+    {
+      "produto": "Pão de Calabresa",
+      "ingredientes": [
+        "500g de farinha de trigo",
+      "10g de fermento biológico seco",
+      "1 colher de chá de açúcar",
+      "1/2 colher de chá de sal",
+      "1 xícara de água morna",
+      "2 colheres de sopa de óleo",
+      "200g de calabresa picada e frita"
+    ],
+      "modoDePreparo": "Dissolva o fermento na água morna com o açúcar. Misture a farinha, o sal e o óleo. Adicione o fermento dissolvido e sove até ficar lisa. Incorpore a calabresa e deixe descansar até dobrar de volume.Modele os pães e asse a 180°C por cerca de 25 minutos.",
+      "imagem": "assets/icon/calabresa.jpeg"
+    },
+    {
+      "produto": "Pão de Coco",
+      "ingredientes": [
+        "500g de farinha de trigo",
+      "10g de fermento biológico seco",
+      "1/4 xícara de açúcar",
+      "1/2 colher de chá de sal",
+      "1 xícara de leite de coco morno",
+      "2 colheres de sopa de manteiga",
+      "100g de coco ralado"
+      ],
+      "modoDePreparo": "Misture o fermento com o leite de coco e o açúcar. Acrescente a farinha, o sal e a manteiga, misturando bem. Adicione o coco ralado e sove até a massa ficar lisa. Deixe descansar até dobrar de volume. Modele os pães e asse a 180°C por cerca de 30 minutos.",
+      "imagem": "assets/icon/paodecoco.jpg"
+    },
+    {
+      "produto": "Pão de Cachorro quente",
+      "ingredientes": [
+        "500g de farinha de trigo",
+      "1/4 xícara de açúcar",
+      "1/2 colher de sopa de sal",
+      "10g de fermento biológico seco",
+      "2 colheres de sopa de manteiga",
+      "1 xícara de leite morno",
+      "1 ovo para pincelar"
+      ],
+      "modoDePreparo": "Misture o fermento com o açúcar e o leite morno. Adicione a farinha, o sal e a manteiga. Sove bem e deixe descansar por 1 hora. Modele no formato de pão de cachorro-quente e deixe descansar. Pincele com ovo e asse a 180°C até dourar.",
+      "imagem": "assets/icon/paodecachorroquente.jpeg"
+    },
+    {
+      "produto": "Pão de batata",
+      "ingredientes": [
+        "500g de batatas cozidas e amassadas",
+      "1 kg de farinha de trigo",
+      "1 xícara de leite morno",
+      "2 ovos",
+      "100g de manteiga",
+      "5 colheres de sopa de açúcar",
+      "1 colher de chá de sal",
+      "10g de fermento biológico seco"
+    ],
+      "modoDePreparo": "Misture o fermento com o leite morno e açúcar. Adicione batatas amassadas, manteiga, ovos e sal. Acrescente a farinha aos poucos, sovando bem. Deixe descansar até dobrar de volume. Modele e asse a 180°C até dourar.",
+      "imagem": "assets/icon/paodebatata.jpeg"
+    },
+    {
+      "produto": "Bolo de Chocolate",
+      "ingredientes": [],
+      "modoDePreparo": "",
+      "imagem": "assets/icon/chocolate.jpeg"
+    },
+    {
+      "produto": "Bolo de Cenoura",
+      "ingredientes": [],
+      "modoDePreparo": "",
+      "imagem": "assets/icon/cenoura.jpeg"
+    },
+    {
+      "produto": "Bolo de Fubá",
+      "ingredientes": [],
+      "modoDePreparo": "",
+      "imagem": "assets/icon/fuba.jpeg"
+    },
+    {
+      "produto": "Bolo de Milho",
+      "ingredientes": [],
+      "modoDePreparo": "l",
+      "imagem": "assets/icon/milho.jpeg"
+    },
+    {
+      "produto": "Biscoito de Maizena",
+      "ingredientes": [],
+      "modoDePreparo": "l",
+      "imagem": "assets/icon/maizena.jpeg"
+    },
+    {
+      "produto": "Biscoito de Chocolate",
+      "ingredientes": [],
+      "modoDePreparo": "l",
+      "imagem": "assets/icon/cookie.jpeg"
+    }
+  ]
+}

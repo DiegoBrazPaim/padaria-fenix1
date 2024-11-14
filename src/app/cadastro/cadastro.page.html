@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="transparent">
+    <ion-title style="display: flex; align-items: center; justify-content: center;">
+      <a [routerLink]="['/products']">
+        <img src="assets/icon/logo.jpeg" alt="Padaria Fênix" class="logo" style="margin-right: 10px;">
+      </a>
+      Padaria Fênix
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <div class="container" style="text-align: center;">
+    <h2>Cadastro</h2>
+
+    <ion-item>
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-input placeholder="Digite seu apelido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail" slot="start"></ion-icon>
+      <ion-input placeholder="Digite seu email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-input type="password" placeholder="Digite sua senha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-input placeholder="Digite seu CEP" (ionInput)="getAddress($event.target.value?.toString() ?? '')"></ion-input>
+
+    </ion-item>
+    <ion-item>
+      <ion-icon name="location" slot="start"></ion-icon>
+      <ion-input placeholder="Digite seu bairro" [(ngModel)]="bairro" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="home" slot="start"></ion-icon>
+      <ion-input placeholder="Digite sua rua" [(ngModel)]="rua" disabled></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="warning">Cadastrar</ion-button>
+
+    <p>Já possui um login? <a href="/login">Entre agora</a></p>
+  </div>
+</ion-content>

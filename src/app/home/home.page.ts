@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
 export class HomePage {
+  constructor(private menu: MenuController, private router: Router) {}
 
-  constructor() {}
-
+  closeMenuAndNavigate() {
+    this.menu.close().then(() => {
+      this.router.navigate(['/products']);
+    });
+  }
 }

@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule) },
+  { path: 'products', loadChildren: () => import('./home/products/products.module').then(m => m.ProductsPageModule) },
+  { path: 'cadastro', loadChildren: () => import('./cadastro/cadastro.module').then(m => m.CadastroPageModule) },
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule) },
+  { path: 'alterar-senha', loadChildren: () => import('./alterar-senha/alterar-senha.module').then(m => m.AlterarSenhaPageModule) },
+  { path: 'receitas/:produto', loadChildren: () => import('./receitas/receitas.module').then(m => m.ReceitasPageModule) },   {
+    path: 'configuracoes',
+    loadChildren: () => import('./configuracoes/configuracoes.module').then( m => m.ConfiguracoesPageModule)
   },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
+// Rota com parâmetro
 ];
 
 @NgModule({
