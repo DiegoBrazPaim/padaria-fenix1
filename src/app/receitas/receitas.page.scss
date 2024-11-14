@@ -1,32 +1,69 @@
-.home-background {
-    --background: url('/assets/imgs/telaprodutos3.jpg') no-repeat center center;
-  background-size: cover;
-  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-  
-  .logo-container {
+/* receitas.page.scss */
+
+/* Estilo para o cabeçalho */
+ion-header {
+  ion-toolbar {
+    --background: #f39c12; /* Cor de fundo do cabeçalho */
+    --color: #fff; /* Cor do texto */
     text-align: center;
-    margin-top: 50%;
+
+    ion-title {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    ion-button {
+      color: #fff; /* Cor do ícone voltar */
+    }
   }
-  
-  .title {
-    color: #ff4500;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  .subtitle {
-    color: #e87d23;
+}
+
+/* Estilo para o conteúdo principal */
+ion-content {
+  --background: #000000; /* Cor de fundo da página */
+  padding: 16px;
+
+  /* Estilo para a imagem da receita */
+  ion-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
-  
-  ion-button {
-    --background: #e87d23;
-    --border-radius: 20px;
+
+  /* Estilo para o título */
+  h2 {
+    font-size: 1.4rem;
     color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 600;
   }
-  
+
+  /* Estilo para a lista de ingredientes */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    li {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+  }
+
+  /* Estilo para o modo de preparo */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
