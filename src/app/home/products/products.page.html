@@ -7,11 +7,13 @@
 
   <ion-content>
     <ion-list>
-      <!-- Opção de Cadastro -->
-      <ion-item routerLink="/cadastro">
-        <ion-icon name="person-add" slot="start"></ion-icon>
-        <ion-label>Cadastro</ion-label>
+      <!-- Opção de Usuário Logado -->
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>Bem-vindo, {{ usuarioNome }}</ion-label>
       </ion-item>
+
+
 
       <!-- Voltar para Home -->
       <ion-item routerLink="/home">
@@ -42,17 +44,22 @@
         <ion-icon name="information-circle" slot="start"></ion-icon>
         <ion-label>Sobre</ion-label>
       </ion-item>
+
+      <!-- Logout -->
+            <ion-item button (click)="logout()">
+              <ion-icon name="log-out" slot="start"></ion-icon>
+              <ion-label>Sair</ion-label>
+            </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
-
 
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title> <img src="assets/icon/logo.jpeg" alt="Padaria Fênix" class="logo" style="margin-top: 10px;">Padaria Fenix</ion-title>
+    <ion-title> <img src="assets/icon/logo.jpeg" alt="Padaria Fênix" class="logo" style="margin-top: 10px;">Padaria Fênix</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -78,48 +85,48 @@
     </ion-list>
   </div>
 
-<!-- Seção de Bebidas -->
-    <div class="category-section">
-      <h2>Bebidas</h2>
-      <ion-list>
-        <ion-item (click)="toggleBebidaList()" detail>
-          <ion-icon name="arrow-dropdown" slot="end"></ion-icon>
-          <ion-label>Bebidas</ion-label>
+  <!-- Seção de Bebidas -->
+  <div class="category-section">
+    <h2>Bebidas</h2>
+    <ion-list>
+      <ion-item (click)="toggleBebidaList()" detail>
+        <ion-icon name="arrow-dropdown" slot="end"></ion-icon>
+        <ion-label>Bebidas</ion-label>
+      </ion-item>
+      <ion-list *ngIf="showBebidaList">
+        <ion-item *ngFor="let bebida of bebida">
+          <ion-thumbnail slot="start">
+            <img [src]="bebida.imagem" />
+          </ion-thumbnail>
+          <ion-label>{{ bebida.nome }}<br />
+            <small>Preço: R$ {{ bebida.preco }}</small> </ion-label>
         </ion-item>
-        <ion-list *ngIf="showBebidaList">
-          <ion-item *ngFor="let bebida of bebida">
-            <ion-thumbnail slot="start">
-              <img [src]="bebida.imagem" />
-            </ion-thumbnail>
-            <ion-label>{{ bebida.nome }}<br />
-              <small>Preço: R$ {{ bebida.preco }}</small> </ion-label>
-          </ion-item>
-        </ion-list>
       </ion-list>
-    </div>
+    </ion-list>
+  </div>
 
- <!-- Seção de Bolos -->
-    <div class="category-section">
-      <h2>Bolos</h2>
-      <ion-list>
-        <ion-item (click)="toggleBoloList()" detail>
-          <ion-icon name="arrow-dropdown" slot="end"></ion-icon>
-          <ion-label>Bolos</ion-label>
+  <!-- Seção de Bolos -->
+  <div class="category-section">
+    <h2>Bolos</h2>
+    <ion-list>
+      <ion-item (click)="toggleBoloList()" detail>
+        <ion-icon name="arrow-dropdown" slot="end"></ion-icon>
+        <ion-label>Bolos</ion-label>
+      </ion-item>
+      <ion-list *ngIf="showBoloList">
+        <ion-item *ngFor="let bolo of bolos" [routerLink]="['/receitas', bolo.nome]">
+          <ion-thumbnail slot="start">
+            <img [src]="bolo.imagem" />
+          </ion-thumbnail>
+          <ion-label>{{ bolo.nome }}<br />
+            <small>Preço: R$ {{ bolo.preco }}</small> </ion-label>
+          <ion-icon name="book-outline" slot="end"></ion-icon> 
         </ion-item>
-        <ion-list *ngIf="showBoloList">
-          <ion-item *ngFor="let bolo of bolos" [routerLink]="['/receitas', bolo.nome]">
-            <ion-thumbnail slot="start">
-              <img [src]="bolo.imagem" />
-            </ion-thumbnail>
-            <ion-label>{{ bolo.nome }}<br />
-              <small>Preço: R$ {{ bolo.preco }}</small> </ion-label>
-            <ion-icon name="book-outline" slot="end"></ion-icon> 
-          </ion-item>
-        </ion-list>
       </ion-list>
-    </div>
+    </ion-list>
+  </div>
 
-      <!-- Seção de Biscoitos -->
+  <!-- Seção de Biscoitos -->
   <div class="category-section">
     <h2>Biscoitos</h2>
     <ion-list>
@@ -181,5 +188,3 @@
     </ion-list>
   </div>
 </ion-content>
-
-

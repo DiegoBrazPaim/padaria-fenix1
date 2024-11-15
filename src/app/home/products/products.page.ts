@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-
+import { Router } from '@angular/router'; // Para navegação
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-products',
@@ -13,13 +14,20 @@ export class ProductsPage implements OnInit {
   showBiscoitoList = false;
   showFrioList = false;
   showOutroList = false;
+  usuarioNome: string = '';
 
-  constructor(private renderer: Renderer2) {}
+
+  
+
+  constructor(private renderer: Renderer2, private authService: AuthService,
+    private router: Router) {}
+    
   categories = [
   ];
 
   ngOnInit() {
-  
+   // Atribuir o nome do usuário logado ao componente
+   this.usuarioNome = this.authService.getUsuarioNome();
   
   }
   paes = [
@@ -198,6 +206,12 @@ export class ProductsPage implements OnInit {
 
   toggleOutroList() {
     this.showOutroList = !this.showOutroList;
+  }
+
+  // Função para logout
+  logout() {
+    this.authService.logout(); // Chama o serviço para deslogar
+    this.router.navigate(['/login']); // Redireciona para a página de login
   }
 
   

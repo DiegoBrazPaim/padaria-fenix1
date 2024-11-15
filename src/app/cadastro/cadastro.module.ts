@@ -16,6 +16,7 @@ import { CadastroPage } from './cadastro.page';
     IonicModule,
     CadastroPageRoutingModule
   ],
+  exports: [CadastroPage],
   declarations: [CadastroPage]
 })
 export class CadastroPageModule {}
