@@ -11,11 +11,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http'; // Para requisições HTTP
 import { FormsModule } from '@angular/forms'; // Para usar ngModel
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule, 
     AppRoutingModule,
     HttpClientModule, // Adicionado para requisições HTTP
     FormsModule // Adicionado para usar ngModel nos formulários
